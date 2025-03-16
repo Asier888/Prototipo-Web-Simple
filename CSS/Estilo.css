@@ -1,13 +1,14 @@
 body {
     font-family:Georgia, 'Times New Roman', Times, serif;
-    background-color: #a3a3a3;
+    background-color: white;
 }
 
 header {
     background-color: #003366;
     color: white;
     text-align: center;
-    padding: 1em;
+    padding: 5px;
+    font-size: 14px;
 }
 
 nav ul {
@@ -16,14 +17,21 @@ nav ul {
     background-color: #0055A4;
 }
 
-nav ul li {
+nav li {
     margin: 15px;
 }
 
-nav ul li a {
+nav a {
     color: white;
     text-decoration: none;
     font-weight: bold;
+    padding: 10px;
+    width: 150px;
+}
+
+nav li:hover{
+    background-color: navy;
+
 }
 
 .fotoLogo{
@@ -31,5 +39,95 @@ nav ul li a {
     width: 25%;
     display: flex;
     justify-content: flex-start;
-
 }
+
+
+main {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+    color: rgb(0, 66, 110);
+    flex-direction: row-reverse;
+}
+
+.informacion {
+    flex: 1;
+    margin-left: 20px;
+}
+
+.foto {
+    width: 60%;
+    height: auto;
+    border-radius: 8px;
+    border: 3px solid #0078A1; 
+}
+
+footer {
+    background-color: #003366;
+    color: white;
+    padding: 20px;
+    text-align: center;
+}
+
+.footer-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    max-width: 1200px;
+    margin: auto;
+}
+
+.footer-info, .footer-links, .footer-redes {
+    flex: 1;
+    min-width: 200px;
+    margin: 10px;
+}
+
+.bibendum {
+    
+    width: 120px;
+    margin-bottom: 10px;
+}
+
+.footer-links ul {
+    list-style: none;
+    padding: 0;
+}
+
+.footer-links li {
+    margin: 5px 0;
+}
+
+.footer-links a {
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.footer-links a:hover {
+    text-decoration: underline;
+}
+
+.footer-redes img {
+    width: 50px;
+    margin: 0 5px;
+}
+
+.footer-derechos {
+    margin-top: 20px;
+    font-size: 14px;
+    border-top: 1px solid white;
+    padding-top: 10px;
+}
+
+
+
+
+
+
+
+
+
+    
