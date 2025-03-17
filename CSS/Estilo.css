@@ -31,7 +31,6 @@ nav a {
 
 nav li:hover{
     background-color: navy;
-
 }
 
 .fotoLogo{
@@ -40,7 +39,6 @@ nav li:hover{
     display: flex;
     justify-content: flex-start;
 }
-
 
 main {
     display: flex;
@@ -60,7 +58,7 @@ main {
     width: 60%;
     height: auto;
     border-radius: 8px;
-    border: 3px solid #0078A1; 
+    border: 3px solid #0078A1;
 }
 
 footer {
@@ -86,7 +84,6 @@ footer {
 }
 
 .bibendum {
-    
     width: 120px;
     margin-bottom: 10px;
 }
@@ -121,6 +118,122 @@ footer {
     border-top: 1px solid white;
     padding-top: 10px;
 }
+
+.auth-form {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    margin-top: 30px;
+}
+
+.form-container {
+    background-color: rgb(209, 209, 209);
+    padding: 20px;
+    width: 45%;
+    margin-bottom: 20px;
+    border-radius: 8px;
+}
+
+.form-container h3 {
+    text-align: center;
+    font-size: 20px;
+    margin-bottom: 20px;
+}
+
+.form-container label {
+    margin-bottom: 10px;
+    font-weight: bold;
+}
+
+.form-container input[type="text"],
+.form-container input[type="password"],
+.form-container input[type="email"] {
+    width: 90%;
+    padding: 10px;
+    margin-bottom: 15px;
+
+}
+
+.form-container button {
+    width: 100%;
+    padding: 12px;
+    background-color: #001d8f;
+    color: white;
+
+}
+
+.form-container button:hover {
+    background-color: #0054a2;
+}
+
+.productos {
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+h2 {
+    text-align: left;
+    font-size: 24px;
+    margin-bottom: 20px;
+}
+
+table {
+    width: 80%;
+    margin-top: 20px;
+    margin-bottom: 40px;
+    text-align: left;
+    
+}
+
+table th, table td {
+    padding: 10px;
+    border: 2px solid #ddd;
+    
+}
+
+table th {
+    background-color: #0055A4;
+    color: white;
+    
+}
+
+table tr {
+    background-color: rgb(209, 209, 209);
+}
+
+.producto-imagen {
+    width: 18%;
+}
+
+/* NUEVOS ESTILOS */
+.sobre-nosotros {
+    text-align: center;
+}
+
+.sobre-nosotros h2, .sobre-nosotros h3 {
+    color: #003366;
+}
+
+.sobre-nosotros p {
+    text-align: justify;
+    line-height: 1.6;
+}
+
+.imagenes-trabajadores {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    flex-wrap: wrap;
+    margin-top: 20px;
+}
+
+.imagenes-trabajadores img {
+    width: 30%;
+    height: auto;
+    border-radius: 8px;
+    box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.2);
+}
+
 
 
 
