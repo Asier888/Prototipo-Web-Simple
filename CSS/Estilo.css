@@ -8,7 +8,7 @@ header {
     color: white;
     text-align: center;
     padding: 5px;
-    font-size: 14px;
+    font-size: 16px;
 }
 
 nav ul {
@@ -39,6 +39,21 @@ nav li:hover{
     display: flex;
     justify-content: flex-start;
 }
+
+.telefono {
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    position: absolute;
+    top: 10px;
+    right: 1px;
+}
+
+.telefono img {
+    width: 80px;
+    height: 80px;
+}
+
 
 main {
     display: flex;
@@ -119,50 +134,50 @@ footer {
     padding-top: 10px;
 }
 
-.auth-form {
-    display: flex;
-    justify-content: space-between;
-    flex-wrap: wrap;
+.formulario {
+    background-color: rgb(209, 209, 209);
+    padding: 20px;
+    border-radius: 8px;
     margin-top: 30px;
 }
 
-.form-container {
-    background-color: rgb(209, 209, 209);
-    padding: 20px;
-    width: 45%;
-    margin-bottom: 20px;
-    border-radius: 8px;
-}
-
-.form-container h3 {
+.formulario h3 {
     text-align: center;
     font-size: 20px;
     margin-bottom: 20px;
 }
 
-.form-container label {
+.formulario label {
+    display: block;
     margin-bottom: 10px;
     font-weight: bold;
 }
 
-.form-container input[type="text"],
-.form-container input[type="password"],
-.form-container input[type="email"] {
-    width: 90%;
+.formulario input[type="text"],
+.formulario input[type="email"],
+.formulario select,
+.formulario textarea {
+    width: 100%;
     padding: 10px;
     margin-bottom: 15px;
-
+    border: 1px solid #ccc;
+    border-radius: 5px;
 }
 
-.form-container button {
+.formulario textarea {
+    resize: vertical;
+}
+
+.formulario button {
     width: 100%;
     padding: 12px;
     background-color: #001d8f;
     color: white;
-
+    border: none;
+    border-radius: 5px;
 }
 
-.form-container button:hover {
+.formulario button:hover {
     background-color: #0054a2;
 }
 
@@ -205,13 +220,13 @@ table tr {
     width: 18%;
 }
 
-/* NUEVOS ESTILOS */
 .sobre-nosotros {
     text-align: center;
 }
 
 .sobre-nosotros h2, .sobre-nosotros h3 {
     color: #003366;
+    text-align: center;
 }
 
 .sobre-nosotros p {
@@ -234,13 +249,55 @@ table tr {
     box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.2);
 }
 
+.cliente {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background: rgb(235, 235, 235);
+    padding: 15px;
+    border-radius: 10px;
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.2);
+    width: 180px;
+}
 
+.cliente img {
+    width: 100px;
+    height: auto;
+    margin-bottom: 10px;
+}
 
+.cliente p {
+    font-size: 15px;
+    font-weight: bold;
+    text-align: center;
+    color: #003366;
+}
 
+.cliente:hover {
+    transform: scale(1.1);
+}
 
-
-
-
-
-
+.titulo-clientes {
+    text-align: center;
+    color: #003366;
+    margin-bottom: 10px;
+    font-size: 20px;
+    margin-top: 30px;
     
+}
+
+.descripcion {
+    text-align: center;
+    font-size: 16px;
+    margin: 0 auto;
+    max-width: 800px;
+    color: #323232;
+}
+
+.clientes-container {
+    display: flex;
+    flex-wrap: wrap;
+    padding: 20px;
+    justify-content: center;
+    gap: 20px;
+}

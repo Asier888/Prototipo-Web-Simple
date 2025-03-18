@@ -1,9 +1,9 @@
 <!DOCTYPE html>
-<html lang="es">
+<html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Productos - Michelin</title>
+    <title>Inicio - Michelin</title>
     <link rel="stylesheet" href="../CSS/estilo.css">
 </head>
 <body>
@@ -17,8 +17,13 @@
                         <li><a href="p1.html">Inicio</a></li>
                         <li><a href="p2.html">Sobre Nosotros</a></li>
                         <li><a href="p3.html">Productos</a></li>
-                        <li><a href="p4.html">Contacto</a></li>
+                        <li><a href="p4.html">Clientes</a></li>
                     </ul>
+                </div>
+                <div class="telefono">
+                    <a href="https://www.paginasamarillas.es/f/vitoria-gasteiz/michelin-espana-portugal-s-a-_012195434_000000003.html">
+                        <img src="../Imagenes/telefono.png" alt="Teléfono">
+                    </a>
                 </div>
             </div>
         </nav>
@@ -43,52 +48,61 @@
                         <td>Verano</td>
                         <td>Neumáticos para verano, ofrecen alta tracción y resistencia.</td>
                         <td>€120</td>
-                        <td><a href="https://www.michelin.es/auto/tyres/michelin-pilot-sport-5" target="_blank"><img class="producto-imagen" src="../Imagenes/verano.png" alt="Rueda de verano"></td>
+                        <td><a href="https://www.michelin.es/auto/tyres/michelin-pilot-sport-5" target="_blank"><img class="producto-imagen" src="../Imagenes/verano.png" alt="Rueda de verano"/></td>
                     </tr>
                     <tr>
                         <td>Invierno</td>
                         <td>Neumáticos diseñados para climas fríos, con mejor agarre en nieve.</td>
                         <td>€150</td>
-                        <td><a href="https://www.michelin.es/auto/browse-tyres/by-season/winter" target="_blank"><img class="producto-imagen" src="../Imagenes/invierno.png" alt="Rueda de invierno"></td>
+                        <td><a href="https://www.michelin.es/auto/browse-tyres/by-season/winter" target="_blank"><img class="producto-imagen" src="../Imagenes/invierno.png" alt="Rueda de invierno"/></td>
                     </tr>
                     <tr>
                         <td>All Season</td>
                         <td>Neumáticos para todo el año, ideales para todo tipo de climas.</td>
                         <td>€130</td>
-                        <td><a href="https://www.michelin.es/auto/browse-tyres/by-season/allseason" target="_blank"><img class="producto-imagen" src="../Imagenes/all_season.png" alt="Rueda all season"></td>
+                        <td><a href="https://www.michelin.es/auto/browse-tyres/by-season/allseason" target="_blank"><img class="producto-imagen" src="../Imagenes/all_season.png" alt="Rueda all season"/></td>
                     </tr>
                 </tbody>
             </table>
 
-            <div class="auth-form">
-                <!-- Iniciar sesión -->
-                <div class="form-container">
-                    <h3>Iniciar sesión</h3>
-                    <form>
-                        <label for="username">Usuario:</label>
-                        <input type="text" id="username" name="username" required>
-                        <label for="password">Contraseña:</label>
-                        <input type="password" id="password" name="password" required>
-                        <button type="submit">Iniciar sesión</button>
-                    </form>
-                </div>
+            <div class="formulario">
+                <h3>Formulario de nuestros productos</h3>
+                <form action="#" method="post">
+            
+                    <label for="nombre">Nombre:</label>
+                    <input type="text" id="nombre" name="nombre" required>
 
-                <!-- Registrarse -->
-                <div class="form-container">
-                    <h3>Registrarse</h3>
-                    <form>
-                        <label for="email">Correo electronico:</label>
-                        <input type="email" id="email" name="email" required>
-                        <label for="username-reg">Usuario:</label>
-                        <input type="text" id="username-reg" name="username-reg" required>
-                        <label for="password-reg">Contraseña:</label>
-                        <input type="password" id="password-reg" name="password-reg" required>
-                        <button type="submit">Registrarse</button>
-                    </form>
-                </div>
+                    <label for="email">Correo electrónico:</label>
+                    <input type="email" id="email" name="email" required>
+
+                    <label for="informacion">¿Quieres recibir más información sobre los productos?</label>
+                    <input type="checkbox" id="informacion" name="informacion">
+
+                    <label for="tipo-neumatico">¿Que tipo de neumático prefieres?</label><br>
+                    <input type="radio" id="verano" name="tipo-neumatico" value="Verano">
+                    <label for="verano">Verano</label><br>
+                    <input type="radio" id="invierno" name="tipo-neumatico" value="Invierno">
+                    <label for="invierno">Invierno</label><br>
+                    <input type="radio" id="all-season" name="tipo-neumatico" value="All Season">
+                    <label for="all-season">Todo el año</label>
+
+                    <label for="cantidad">Cantidad de neumáticos:</label>
+                    <select id="cantidad" name="cantidad" required>
+                        <option value="1">1</option>
+                        <option value="2">2</option>
+                        <option value="3">3</option>
+                        <option value="4">4</option>
+                    </select>
+
+                    <label for="comentarios">Comentarios:</label>
+                    <textarea id="comentarios" name="comentarios" rows="4" cols="50"></textarea>
+
+                    <button type="submit">Enviar</button>
+                </form>
             </div>
         </div>
     </main>
+
 
     <footer>
         <div class="footer-container">
